@@ -1,0 +1,133 @@
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    background: linear-gradient(135deg, #a7ff9a 0%, #aff4ef 100%);
+    color: #333;
+    text-align: center;
+}
+
+/* Glassmorphism Container */
+.container {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    max-width: 600px;
+    width: 100%;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Heading */
+.heading {
+    font-size: 2.5rem;
+    color: #ffffff;
+    margin-bottom: 20px;
+    margin-left: 2rem;
+}
+
+/* Game Section */
+.game {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* Add space between elements */
+    margin-bottom: 20px;
+    color: #555;
+    width: 100%;
+}
+
+/* Player and Computer Sections */
+.player-section, .computer-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.2); /* Light glass effect on player and computer sections */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 200px;
+}
+
+/* Player/Computer Choices */
+.player-section h2, .computer-section h2 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+
+/* VS Text */
+.vs {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #f39c12;
+    align-self: center; /* Center the VS */
+}
+
+/* Score Styling */
+.player-section p, .computer-section p {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    margin: 0;
+    background: rgba(255, 255, 255, 0.3); /* Slightly frosted background for scores */
+    padding: 10px;
+    border-radius: 8px;
+}
+
+/* Button Section */
+.button {
+    margin: 20px 0;
+}
+
+button.RPS {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    margin: 0 10px;
+    background: #ff9a9e;
+    border: none;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+button.RPS:hover {
+    background: #f39c12;
+    transform: scale(1.1); /* Slight pop effect */
+}
+
+button:focus {
+    outline: none;
+}
+
+/* Winner Message */
+.msg-container {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #444;
+    margin-top: 20px;
+}
+
+.winner-message {
+    font-size: 2rem;
+    color: #2ecc71;
+}
+
+.loser-message {
+    font-size: 2rem;
+    color: #e74c3c;
+}
+
+.tie-message {
+    font-size: 2rem;
+    color: #f4ff29;
+}
